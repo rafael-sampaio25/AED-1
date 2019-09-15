@@ -37,7 +37,7 @@ int main(void) {
   scanf("%d",&CapBloco);
   Blocos = (Bloco *) calloc(1, sizeof(Bloco));
   NBlocos = 0;
-  Blocos[NBlocos].Alunos = (int *) calloc(CapBloco, sizeof(int));
+  Blocos[NBlocos].Alunos = (int *) calloc(CapBloco, sizeof(int)); // Alocando Memória ao Bloco
   Blocos[NBlocos].cap = 0;
   scanf("%d",&Cod);
   if (Cod != -1){
