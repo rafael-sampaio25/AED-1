@@ -38,7 +38,7 @@ int Pop(TPilha *pPilha, float *pX){
  
 void LerOP(TPilha *Pilha, char op[]){
   int i;
-  float x=0, x1=0, x2=0, vet[25] = {0};
+  float x=0, x1=0, x2=0;
   for (i=0; i<strlen(op); i++){
     switch (op[i]){
       case '+': 
@@ -71,6 +71,7 @@ void LerOP(TPilha *Pilha, char op[]){
         break;
     }
   }
+  Pop(Pilha, &x);
   printf("%f",x);
 }
  
