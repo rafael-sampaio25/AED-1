@@ -35,7 +35,7 @@ int Pop(TPilha *pPilha, float *pX){
     return 1;
   }
 }
- 
+// 
 void LerOP(TPilha *Pilha, char op[]){
   int i;
   float x=0, x1=0, x2=0;
