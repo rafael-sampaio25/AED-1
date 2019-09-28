@@ -67,7 +67,7 @@ int main(void){
   for (i=0; i<N; i++){
     Retira(&Lista, K%aux, &x);
     K = K%aux;
-    K += ValorinicialK;
+    K += ValorinicialK; // Somando sempre o valor inicial de K, visto que neste ciclo o valor de K iria mudar constantemente.
     aux--;
     printf("%s\n",x.nome);
   }
