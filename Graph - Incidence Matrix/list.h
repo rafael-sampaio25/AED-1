@@ -1,7 +1,7 @@
 typedef struct SCell Cell;
 
 struct SCell{
-  int Adj; // ADJACENCIES OF 'u' VERTEX
+  int Adj; // ADJACENCIES OF 'u' NODE
   Cell *prev, *next;
 };
 
@@ -39,7 +39,7 @@ int Add(ListT *List, Cell *p, int Adj) {
 /* NOT NECESSARY A REMOVE FUNCTION
 int Remove(ListT *List, Cell *p, int *Adj) {
   Cell *aux;
-  if (List->tamanho == 0) {
+  if (List->length == 0) {
     return 0;
   }
   aux = p;
