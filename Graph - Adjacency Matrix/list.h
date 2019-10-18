@@ -1,7 +1,7 @@
 typedef struct SCell Cell;
 
 struct SCell{
-  int Adj; // ADJACENCIES OF 'u' VERTEX
+  int Adj; // ADJACENCIES OF 'u' NODE
   Cell *prev, *next;
 };
 
